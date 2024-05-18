@@ -20,17 +20,22 @@
     font-size: 28px;
     margin: 0;
     padding: 0;
-    line-height: 1;
+    color: $secondary;
     font-weight: 600;
     letter-spacing: 2px;
     font-family: $font-secondary;
 
     a {
       color: #fff;
+      margin-right: 3rem;
     }
 
     img {
-      max-height: 40px;
+      max-height: 70px;
+      margin-left: 2rem;
     }
+
+
+
   }
 }
