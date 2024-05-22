@@ -307,6 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 9px 35px;
   border-radius: 50px;
   transition: 0.5s;
+  margin-bottom: 2rem;
   margin-top: 40px;
   border: 2px solid #f0ba8b;
   color: #fff;
@@ -452,10 +453,15 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: whitesmoke;
+}
 .about h3 {
   font-weight: 700;
   font-size: 34px;
   color: #050B3f;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .about h4 {
   font-size: 20px;
@@ -473,24 +479,92 @@ section {
 }
 .about .about-img {
   height: 190px;
+  margin-right: 3rem;
+}
+.about .btn-about {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: #050B3f;
+  margin-left: 3rem;
+  display: inline-block;
+  padding: 9px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-bottom: 2rem;
+  margin-top: 40px;
+  border: 2px solid #f0ba8b;
+  color: #fff;
+}
+.about .btn-about:hover {
+  background: #f0ba8b;
 }
 
 /*--------------------------------------------------------------
-# Counts
+# Values
 --------------------------------------------------------------*/
-.counts {
-  padding: 40px 0;
+.values .card {
+  border: 0;
+  padding: 160px 20px 20px 20px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.counts .counters span {
-  font-size: 48px;
-  display: block;
+.values .card-body {
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  transition: ease-in-out 0.4s;
+  border-radius: 5px;
+}
+.values .card-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.values .card-title a {
   color: #050B3f;
 }
-.counts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
+.values .card-text {
+  color: #5e5e5e;
+}
+.values .read-more a {
+  color: #777777;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.values .read-more a:hover {
+  text-decoration: underline;
+}
+.values .card:hover .card-body {
+  background: #f0ba8b;
+}
+.values .card:hover .read-more a, .values .card:hover .card-title, .values .card:hover .card-title a, .values .card:hover .card-text {
+  color: #fff;
+}
+.values .btn {
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 10px 26px 8px 26px;
+  color: #fff;
+  background: #07105b;
+  border-radius: 3rem;
+}
+.values .btn:hover {
+  color: #f0ba8b;
 }
 
 /*--------------------------------------------------------------
