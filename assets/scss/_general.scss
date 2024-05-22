@@ -6,6 +6,10 @@ body {
   color: $default;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 a {
   color: $primary;
   text-decoration: none;

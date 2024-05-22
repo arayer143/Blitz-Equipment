@@ -6,6 +6,10 @@ body {
   color: #444444;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: #f0ba8b;
   text-decoration: none;
@@ -70,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 28px;
   margin: 0;
   padding: 0;
-  color: #050B3f;
+  color: #f0ba8b;
   font-weight: 600;
   letter-spacing: 2px;
   font-family: "Poppins", sans-serif;
