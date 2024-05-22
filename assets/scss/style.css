@@ -1184,13 +1184,13 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #050B3f;
+  color: #f0ba8b;
   font-size: 14px;
-  background: #949ef7;
+  background: #050B3f;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #9da7f7;
+  background: #050B3f;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1239,7 +1239,7 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #f0ba8b;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1298,7 +1298,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #7884f4;
-  color: #0b1786;
+  color: #f0ba8b;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;

@@ -2,13 +2,13 @@
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: $secondary;
+  color: $primary;
   font-size: 14px;
-  background: lighten($secondary, 64);
+  background: $secondary;
 
   .footer-top {
     padding: 60px 0 30px 0;
-    background: lighten($secondary, 66);
+    background: $secondary;
 
     .footer-contact {
       h4 {
@@ -61,7 +61,7 @@
         }
 
         a {
-          color: lighten($default, 20);
+          color:$primary;
           transition: 0.3s;
           display: inline-block;
           line-height: 1;
@@ -132,7 +132,7 @@
       font-size: 18px;
       display: inline-block;
       background: lighten($secondary, 58);
-      color: lighten($secondary, 15);
+      color:$primary;
       line-height: 1;
       padding: 8px 0;
       margin-right: 4px;

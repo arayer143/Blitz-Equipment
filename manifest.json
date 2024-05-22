@@ -1,0 +1,38 @@
+{
+    "name": "Blitz Equipment Rentals and Repairs", 
+    "short_name": "Blitz Equipment",
+    "start_url": "/index.html",
+    "description": "Blitz Equipment is a Golf cart and Side-by-Side Rental and repair company",
+    "display": "standalone",
+    "background-color": "#f0ba8b",
+    "theme_color": "#050B3f",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/img/blitz-equipment-no-background.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+
+    "screenshots" : [
+        {
+          "src": "assets/img/blitz-white-background.jpg",
+          "sizes": "2500x1500",
+          "type": "image/png",
+          "form_factor": "wide",
+      
+          "label": "Blitz Equipment Logo"
+        },
+        {
+            "src": "assets/img/blitz-white-background.jpg",
+            "sizes": "2500x1500",
+            "type": "image/png",
+        
+            "form_factor": "narrow",
+            "label": "Blitz Equipment Logo"
+          }
+
+    ]
+    
+}
