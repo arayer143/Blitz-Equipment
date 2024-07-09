@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+.values {
+  
+    .card {
+      border: 0;
+      padding: 160px 20px 20px 20px;
+      position: relative;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  
+  
+  
+    .card-body {
+      z-index: 10;
+      background: rgba($white, .9);
+      padding: 15px 30px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+      transition: 0.3s;
+      transition: ease-in-out 0.4s;
+      border-radius: 5px;
+    }
+  
+    .card-title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+      a {
+        color: $secondary;
+      }
+    }
+  
+    .card-text {
+      color: lighten($default, 10);
+    }
+  
+    .read-more {
+      a {
+        color: lighten($default, 20);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        transition: 0.4s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .card:hover  {
+      .card-body {
+        background: $primary;
+      }
+      .read-more a, .card-title, .card-title a, .card-text {
+        color: $white;
+      }
+    }
+  
+    .btn{
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+   
+      transition: 0.5s;
+      margin-top: 1rem;
+      text-align: center;
+      padding: 10px 26px 8px 26px;
+      color: #fff;
+      background: lighten($secondary, 6);
+      border-radius: 3rem;
+  
+      &:hover{
+        color: $primary;
+      }
+  
+  
+  
+  
+    
+  
+    }
+  
+  }
+  
+  
+  
+  

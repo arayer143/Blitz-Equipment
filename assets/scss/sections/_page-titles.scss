@@ -1,0 +1,99 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background-color: lighten($secondary, 65);
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+    }
+  
+    h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: $primary;
+      bottom: 0;
+      left: calc(50% - 25px);
+    }
+  
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: lighten($secondary, 40);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Breadcrumbs
+  --------------------------------------------------------------*/
+  .breadcrumbs {
+    padding: 20px 0;
+    background-color: lighten($secondary, 66);
+    min-height: 40px;
+    margin-top: 82px;
+  
+    @media (max-width: 992px) {
+      margin-top: 68px;
+    }
+  
+    h2 {
+      font-size: 24px;
+      font-weight: 300;
+      margin: 0;
+      @media (max-width: 992px) {
+        margin: 0 0 10px 0;
+      }
+    }
+  
+    ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+  
+      li + li {
+        padding-left: 10px;
+      }
+  
+      li + li::before {
+        display: inline-block;
+        padding-right: 10px;
+        color: #6c757d;
+        content: "/";
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .d-flex {
+        display: block !important;
+  
+      }
+  
+      ol {
+        display: block;
+        li {
+          display: inline-block;
+        }
+  
+      }
+    }
+  }
+  
