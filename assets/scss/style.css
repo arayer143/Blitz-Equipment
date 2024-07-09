@@ -401,30 +401,74 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+# alternate-section-header
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 140px 0 60px 0;
-  min-height: 30vh;
-  background-color: white;
-  position: relative;
+#alternate-page-title {
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.breadcrumbs:before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  inset: 0;
-}
-
-.breadcrumbs h2 {
-  font-size: 46px;
-  font-weight: 500;
+  overflow: hidden;
+  position: relative;
   color: #fff;
-  justify-content: flex-start;
+  padding: 140px 0 40px 0;
+}
+@media (min-width: 1024px) {
+  #alternate-page-title {
+    background-attachment: fixed;
+  }
+}
+#alternate-page-title:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#alternate-page-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#alternate-page-title h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#alternate-page-title p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+#alternate-page-title .btn {
+  color: #f0ba8b;
+  background: #050B3f;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 80%);
+}
+#alternate-page-title .btn:hover {
+  color: #f0ba8b;
+  background: color-mix(in srgb, #050B3f, transparent 15%);
+  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 55%);
+}
+@media (max-width: 997px) {
+  #alternate-page-title h2,
+  #alternate-page-title h3,
+  #alternate-page-title .btn,
+  #alternate-page-title p {
+    text-align: center;
+  }
+  #alternate-page-title .btn {
+    font-size: 13px;
+    margin: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -591,75 +635,6 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-#about-page {
-  background: url("../img/about-bg.jpg");
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  color: #fff;
-  padding: 140px 0 40px 0;
-}
-@media (min-width: 1024px) {
-  #about-page {
-    background-attachment: fixed;
-  }
-}
-#about-page:before {
-  content: "";
-  background: rgba(13, 20, 41, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#about-page h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
-}
-#about-page h3 {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
-}
-#about-page p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-#about-page .btn {
-  color: #f0ba8b;
-  background: #050B3f;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding: 10px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 80%);
-}
-#about-page .btn:hover {
-  color: #f0ba8b;
-  background: color-mix(in srgb, #050B3f, transparent 15%);
-  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 55%);
-}
-@media (max-width: 997px) {
-  #about-page h2,
-  #about-page h3,
-  #about-page .btn,
-  #about-page p {
-    text-align: center;
-  }
-  #about-page .btn {
-    font-size: 13px;
-    margin: auto;
-  }
-}
-
 /*--------------------------------------------------------------
 # about-page-images Section
 --------------------------------------------------------------*/
