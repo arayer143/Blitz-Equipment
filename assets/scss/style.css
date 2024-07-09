@@ -362,6 +362,72 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #99a2f7;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #f0ba8b;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-title p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2338ee;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  background-color: white;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 46px;
+  font-weight: 500;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -472,98 +538,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-}
-
-.section-bg {
-  background-color: #99a2f7;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #f0ba8b;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-.section-title p {
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #2338ee;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #9da7f7;
-  min-height: 40px;
-  margin-top: 82px;
-}
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 68px;
-  }
-}
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
@@ -612,6 +586,191 @@ section {
 }
 .about .btn-about:hover {
   background: #f0ba8b;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about-page {
+  background: url("../img/about-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 140px 0 40px 0;
+}
+@media (min-width: 1024px) {
+  #about-page {
+    background-attachment: fixed;
+  }
+}
+#about-page:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#about-page h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#about-page h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#about-page p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+#about-page .btn {
+  color: #f0ba8b;
+  background: #050B3f;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 80%);
+}
+#about-page .btn:hover {
+  color: #f0ba8b;
+  background: color-mix(in srgb, #050B3f, transparent 15%);
+  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 55%);
+}
+@media (max-width: 997px) {
+  #about-page h2,
+  #about-page h3,
+  #about-page .btn,
+  #about-page p {
+    text-align: center;
+  }
+  #about-page .btn {
+    font-size: 13px;
+    margin: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# about-page-images Section
+--------------------------------------------------------------*/
+#about-page-images {
+  padding: 60px 0 30px 0;
+}
+#about-page-images .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#about-page-images .speaker .details {
+  background: rgba(5, 11, 63, 0.76);
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#about-page-images .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#about-page-images .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+#about-page-images .speaker .details .social {
+  height: 40px;
+}
+#about-page-images .speaker .details .social i {
+  line-height: 0;
+  margin: 0 2px;
+}
+#about-page-images .speaker .details a {
+  color: #fff;
+}
+#about-page-images .speaker .details a:hover {
+  color: #f0ba8b;
+}
+#about-page-images .speaker:hover .details {
+  bottom: 0;
+}
+
+#about-page-images-details {
+  padding: 60px 0;
+}
+#about-page-images-details .details h2 {
+  color: #0b1786;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#about-page-images-details .details .social {
+  margin-bottom: 15px;
+}
+#about-page-images-details .details .social a {
+  background: white;
+  color: #0b1786;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#about-page-images-details .details .social a:hover {
+  background: #f0ba8b;
+  color: #fff;
+}
+#about-page-images-details .details .social a i {
+  font-size: 16px;
+  line-height: 0;
+}
+#about-page-images-details .details p {
+  color: #0b1786;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  color: #f0ba8b;
+  background: #050B3f;
+  font-weight: 500;
+  margin-right: 1rem;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 80%);
+}
+@media (max-width: 997px) {
+  .btn .btn {
+    display: inline;
+  }
+}
+.btn:hover {
+  color: #f0ba8b;
+  background: color-mix(in srgb, #050B3f, transparent 15%);
+  box-shadow: 0 8px 28px color-mix(in srgb, #050B3f, transparent 55%);
 }
 
 /*--------------------------------------------------------------
@@ -779,6 +938,30 @@ section {
 }
 .services .iconbox-teal:hover .icon i {
   color: #fff;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.social-links a :hover {
+  font-size: 20px;
+}
+.social-links a i {
+  color: white;
+}
+.social-links a i:hover {
+  color: var(--primary);
 }
 
 /*--------------------------------------------------------------

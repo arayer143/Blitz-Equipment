@@ -1,0 +1,28 @@
+.social-links {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-color);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+      font-size: 16px;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      margin-right: 10px;
+      transition: 0.3s;
+
+      :hover {
+        font-size: 20px;
+      }
+
+      i{
+        color:white;
+      }
+
+      i:hover {
+        color: var(--primary);
+      }
+    }
+  }
